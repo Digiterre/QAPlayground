@@ -1,0 +1,6 @@
+C:\Dev-Projects\Automationprojects\Html-5\JoesCoffeeStore.Web\JoesCoffeeStore.Web\bin\JoesCoffeeStore.Web.dll.config
+C:\Dev-Projects\Automationprojects\Html-5\JoesCoffeeStore.Web\JoesCoffeeStore.Web\bin\JoesCoffeeStore.Web.dll
+C:\Dev-Projects\Automationprojects\Html-5\JoesCoffeeStore.Web\JoesCoffeeStore.Web\bin\JoesCoffeeStore.Web.pdb
+C:\Dev-Projects\Automationprojects\Html-5\JoesCoffeeStore.Web\JoesCoffeeStore.Web\obj\Release\JoesCoffeeStore.Web.csprojResolveAssemblyReference.cache
+C:\Dev-Projects\Automationprojects\Html-5\JoesCoffeeStore.Web\JoesCoffeeStore.Web\obj\Release\JoesCoffeeStore.Web.dll
+C:\Dev-Projects\Automationprojects\Html-5\JoesCoffeeStore.Web\JoesCoffeeStore.Web\obj\Release\JoesCoffeeStore.Web.pdb
