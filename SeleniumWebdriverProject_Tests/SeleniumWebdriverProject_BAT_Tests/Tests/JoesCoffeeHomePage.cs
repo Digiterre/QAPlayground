@@ -56,15 +56,15 @@ namespace SeleniumWebdriverProject_Tests
         [Test]
         public void HomePage_Title()
         {
-            //_driver.Navigate().GoToUrl(helper.BaseUrl);
-            _driver.Navigate().GoToUrl("http://localhost:24847");
+           _driver.Navigate().GoToUrl(helper.BaseUrl);
+           // _driver.Navigate().GoToUrl("http://localhost:24847");
             var pageSource = _driver.PageSource;
 
             Thread.Sleep(5000);
             string title= _driver.FindElement(By.CssSelector("#welcometext>header")).Text;
 
 
-            Assert.AreEqual(title, "Joe's Coffee Store");
+            Assert.AreEqual(title, "Welcome to Joe's Coffee Store!");
             helper.GetSessionId();
         }
 
@@ -80,7 +80,7 @@ namespace SeleniumWebdriverProject_Tests
 
 
         [Test]
-        public void HomePage_Title2()
+        public void HomePage_Title_FailingTest()
         {
             _driver.Navigate().GoToUrl(helper.BaseUrl);
             string title = helper.Driver.FindElement(By.XPath("//*[@id='headername']")).Text;

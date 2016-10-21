@@ -58,12 +58,12 @@ namespace SeleniumWebdriverProject_Tests.Helpers
 
                     break;
             }
-            //capability.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
-            //var remotehost = new Uri("http://localhost:4444/wd/hub");
+            capability.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
+            var remotehost = new Uri("http://localhost:4444/wd/hub");
 
 
-            capability.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Linux));
-            var remotehost = new Uri("http://192.168.99.100:4444/wd/hub");
+            //capability.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Linux));
+            //var remotehost = new Uri("http://192.168.99.100:4444/wd/hub");
             
             Driver = new RemoteWebDriver(remotehost, capability);         
 
