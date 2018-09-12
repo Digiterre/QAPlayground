@@ -8,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace FunctionalTest.TestSetup
 {
     [Binding]
-    public class BaseFixture
+    public class FixtureBase
     {
         [AfterScenario()]
         public static void AfterScenario()
@@ -19,12 +19,13 @@ namespace FunctionalTest.TestSetup
             }
 
             Screenshot ss = DriverSingleton.Driver.TakeScreenshot();
-            ss.SaveAsFile(GetFileName(), ScreenshotImageFormat.Jpeg);
+            ss.SaveAsFile(GetTheFileName(), ScreenshotImageFormat.Jpeg);
+            DriverTearDown();
 
         }
 
 
-        private static string GetFileName()
+        private static string GetTheFileName()
         {
             var location = @"C:/Temp/FunctionalTestScreenshots";
             Directory.CreateDirectory(location);
@@ -33,7 +34,7 @@ namespace FunctionalTest.TestSetup
         }
 
         [AfterTestRun]
-        public static void TearDown()
+        public static void DriverTearDown()
         {
             DriverSingleton.Driver.Close();
             DriverSingleton.Driver.Quit();

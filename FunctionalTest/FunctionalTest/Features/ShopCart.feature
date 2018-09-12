@@ -1,4 +1,5 @@
-﻿Feature: ShoppingCart
+﻿##
+Feature: ShoppingCart
 	In order to purchase items online
 	As a shopper
 	I want to add items to my online shopping basket
@@ -7,11 +8,11 @@
 @mytag
 Scenario: Login to site with incorrect details
 	Given I log in with the following details:
-	| userName             | password |
-	| eyong.egbe@gmail.com | password |
+	| userName               | 
+	| lambert.egbe@gmail.com |
 	Then I should be prompted with incorrect login message:
-	| message                    |
-	| Your password is incorrect |
+	| message                                            |
+	| We cannot find an account with that e-mail address |
 
 @mytag
 Scenario: search products by using multiple search criteria

@@ -6,7 +6,7 @@ using OpenQA.Selenium.Safari;
 
 namespace FunctionalTest.Helpers
 {
-    public static class LocalDriverFactory
+    public static class LocalDriver
     {
         internal static IWebDriver GetWebDriver(Browser browser)
         {
@@ -31,9 +31,6 @@ namespace FunctionalTest.Helpers
                     break;
                 case Browser.InternetExplorer:
                     driver = new InternetExplorerDriver();
-                    break;
-                case Browser.Safari:
-                    driver = new SafariDriver();
                     break;
                 default:
                     driver = new FirefoxDriver();

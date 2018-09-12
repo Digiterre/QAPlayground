@@ -8,24 +8,25 @@ using OpenQA.Selenium.Remote;
 
 namespace FunctionalTest.Helpers
 {
-    public class RemoteDriverFactory
+
+    public class RemoteDriver
     {
-        internal static IWebDriver GetWebDriver(Browser browser)
+        public static IWebDriver GetWebDriver(Browser browser)
         {
-            var driver = GetDriver(browser);
+            var driver = GetTheDriver(browser);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             return driver;
         }
 
-        private static IWebDriver GetDriver(Browser browser)
+        private static IWebDriver GetTheDriver(Browser browser)
         {
-            IWebDriver driver = GetCapabilityFor(browser);
+            IWebDriver driver = GetCapabilityForDriver(browser);
             driver.Manage().Window.Maximize();
             driver.Manage().Cookies.DeleteAllCookies();
             return driver;
         }
 
-        private static IWebDriver GetCapabilityFor(Browser browser)
+        private static IWebDriver GetCapabilityForDriver(Browser browser)
         {
             var uri = new Uri(ConfigurationManager.AppSettings["SeleniumHubUrl"]);
             IWebDriver driver;
