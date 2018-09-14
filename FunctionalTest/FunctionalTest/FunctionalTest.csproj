@@ -89,30 +89,30 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Features\ShoppingCart.feature.cs">
+    <Compile Include="Features\ShopCart.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ShoppingCart.feature</DependentUpon>
+      <DependentUpon>ShopCart.feature</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Browser.cs" />
-    <Compile Include="Helpers\LocalDriverFactory.cs" />
-    <Compile Include="Helpers\RemoteDriverFactory.cs" />
+    <Compile Include="Helpers\LocalDriver.cs" />
+    <Compile Include="Helpers\RemoteDriver.cs" />
     <Compile Include="Helpers\StringEnumExtensions.cs" />
-    <Compile Include="Helpers\Utility.cs" />
+    <Compile Include="Helpers\Utilities.cs" />
     <Compile Include="Pages\BasePage.cs" />
-    <Compile Include="Pages\LoginPage.cs" />
-    <Compile Include="Pages\ShoppingPage.cs" />
+    <Compile Include="Pages\LogInPage.cs" />
+    <Compile Include="Pages\ShopPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\ShoppingCartSteps.cs" />
-    <Compile Include="TestSetup\BaseFixture.cs" />
+    <Compile Include="Steps\ShopCartSteps.cs" />
+    <Compile Include="TestSetup\FixtureBase.cs" />
     <Compile Include="TestSetup\DriverSingleton.cs" />
     <Compile Include="TestSetup\TestContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Features\ShoppingCart.feature">
+    <None Include="Features\ShopCart.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ShoppingCart.feature.cs</LastGenOutput>
+      <LastGenOutput>ShopCart.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

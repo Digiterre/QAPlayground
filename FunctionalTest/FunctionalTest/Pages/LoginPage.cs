@@ -8,10 +8,10 @@ using TechTalk.SpecFlow.Assist;
 
 namespace FunctionalTest.Pages
 {
-    public class LoginPage : BasePage
+    public class LogInPage : BasePage
     {
         private Uri _loginPageUri;
-        public LoginPage(IWebDriver driver) : base(driver)
+        public LogInPage(IWebDriver driver) : base(driver)
         {
             _loginPageUri = new Uri(ConfigurationManager.AppSettings["testUrl"]);
         }
@@ -52,16 +52,24 @@ namespace FunctionalTest.Pages
             ClickLogin();
         }
 
-        public ShoppingPage ClickLogin()
-        {   
-            SignInButton.Click();
-            return new ShoppingPage(DriverSingleton.Driver);
+        internal  void LoginWithUnknownEmail(Table table)
+        {
+            SignIn.Click();
+            dynamic values = table.CreateDynamicInstance();
+            string email = values.userName.ToString();
+            //string password = values.password.ToString();
+            Email.Click();
+            Email.SendKeys(email);
+            ContinueButton.Click();
+
         }
 
-        //Elements
+        public ShopPage ClickLogin()
+        {   
+            SignInButton.Click();
+            return new ShopPage(DriverSingleton.Driver);
+        }
 
-
-        //Functions
 
     }
 }

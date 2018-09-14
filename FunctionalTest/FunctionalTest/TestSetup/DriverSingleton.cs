@@ -23,8 +23,8 @@ namespace FunctionalTest.TestSetup
                             var isLocal = bool.Parse(ConfigurationManager.AppSettings["isLocal"]);
                             var browser = ConfigurationManager.AppSettings["Browser"].AsEnum<Browser>();
                             _driver = (isLocal)
-                                ? LocalDriverFactory.GetWebDriver(browser)
-                                : RemoteDriverFactory.GetWebDriver(browser);
+                                ? LocalDriver.GetWebDriver(browser)
+                                : RemoteDriver.GetWebDriver(browser);
                         }
                     }
                 }

@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
+using static OpenQA.Selenium.Support.PageObjects.PageFactory;
 
 namespace FunctionalTest.Pages
 {
@@ -10,19 +10,8 @@ namespace FunctionalTest.Pages
         public BasePage(IWebDriver driver)
         {
             Driver = driver;
-            PageFactory.InitElements(Driver, this);
+            InitElements(Driver, this);
         }
-
-
-        public string Title()
-        {
-            return Driver.Title;
-        }
-        public string Url()
-        {
-            return Driver.Url;
-        }
-
 
     }
 }

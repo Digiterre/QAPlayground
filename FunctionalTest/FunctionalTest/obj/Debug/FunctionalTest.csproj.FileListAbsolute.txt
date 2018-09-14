@@ -27,8 +27,11 @@ c:\users\lamberte\documents\visual studio 2015\Projects\FunctionalTest\Functiona
 c:\users\lamberte\documents\visual studio 2015\Projects\FunctionalTest\FunctionalTest\obj\Debug\FunctionalTest.csprojResolveAssemblyReference.cache
 c:\users\lamberte\documents\visual studio 2015\Projects\FunctionalTest\FunctionalTest\obj\Debug\FunctionalTest.dll
 c:\users\lamberte\documents\visual studio 2015\Projects\FunctionalTest\FunctionalTest\obj\Debug\FunctionalTest.pdb
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 4626c6002bd112c4c5e4bbcd2c429eae297d169c
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\bin\Debug\NUnit3.TestAdapter.dll
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\bin\Debug\nunit.engine.dll
@@ -57,5 +60,8 @@ C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\bin\Debug\WebDriver.xml
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\bin\Debug\WebDriver.Support.xml
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\obj\Debug\FunctionalTest.dll
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\obj\Debug\FunctionalTest.pdb
+<<<<<<< HEAD
 C:\Dev\QAPlayground\FunctionalTest\FunctionalTest\obj\Debug\FunctionalTest.csprojResolveAssemblyReference.cache
 >>>>>>> Stashed changes
+=======
+>>>>>>> 4626c6002bd112c4c5e4bbcd2c429eae297d169c

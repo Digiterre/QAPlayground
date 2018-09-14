@@ -3,7 +3,7 @@ using System.Text;
 
 namespace FunctionalTest.Helpers
 {
-    public class Utility
+    public class Utilities
     {
         public static string RandomAlphabeticString(int size)
         {

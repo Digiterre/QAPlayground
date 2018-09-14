@@ -10,10 +10,10 @@ using TechTalk.SpecFlow.Assist;
 
 namespace FunctionalTest.Pages
 {
-    public class ShoppingPage : BasePage
+    public class ShopPage : BasePage
     {
         
-        public ShoppingPage(IWebDriver driver) : base(driver)
+        public ShopPage(IWebDriver driver) : base(driver)
         {
             
         }

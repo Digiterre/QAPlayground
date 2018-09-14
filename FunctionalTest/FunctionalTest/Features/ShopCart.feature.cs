@@ -24,7 +24,7 @@ namespace FunctionalTest.Features
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "ShoppingCart.feature"
+#line 1 "ShopCart.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -77,24 +77,22 @@ namespace FunctionalTest.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to site with incorrect details", null, new string[] {
                         "mytag"});
-#line 8
+#line 9
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "userName",
-                        "password"});
+                        "userName"});
             table1.AddRow(new string[] {
-                        "eyong.egbe@gmail.com",
-                        "password"});
-#line 9
+                        "lambert.egbe@gmail.com"});
+#line 10
  testRunner.Given("I log in with the following details:", ((string)(null)), table1, "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "message"});
             table2.AddRow(new string[] {
-                        "Your password is incorrect"});
-#line 12
+                        "We cannot find an account with that e-mail address"});
+#line 13
  testRunner.Then("I should be prompted with incorrect login message:", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -107,10 +105,10 @@ this.ScenarioInitialize(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("search products by using multiple search criteria", null, new string[] {
                         "mytag"});
-#line 17
+#line 18
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 18
+#line 19
  testRunner.Given("I am on the ShoppingPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -121,9 +119,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "Clothing",
                         "Men\'s Clothing",
                         "Men"});
-#line 19
+#line 20
  testRunner.When("I search for shoes by the following criteria:", ((string)(null)), table3, "When ");
-#line 22
+#line 23
  testRunner.Then("I should be returned products with the searched criteria", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -136,16 +134,16 @@ this.ScenarioInitialize(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update quantity of products in cart", null, new string[] {
                         "mytag"});
-#line 25
+#line 26
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 26
- testRunner.Given("I am on the ShoppingPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 27
- testRunner.And("I have 3 products in the basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am on the ShoppingPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 28
- testRunner.When("I change the quantity of items in the basket to 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have 3 products in the basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
+ testRunner.When("I change the quantity of items in the basket to 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 30
  testRunner.Then("the number of items should be updated correctly to 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -156,16 +154,16 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void Checkout()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checkout", null, ((string[])(null)));
-#line 35
+#line 36
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 36
- testRunner.Given("I am on the ShoppingPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 37
- testRunner.And("I have 3 products in the basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am on the ShoppingPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 38
- testRunner.When("I proceed to checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have 3 products in the basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 39
+ testRunner.When("I proceed to checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 40
  testRunner.Then("I should see be asked to provide my login information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -178,7 +176,7 @@ this.ScenarioInitialize(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sign Up to site", null, new string[] {
                         "ignore"});
-#line 45
+#line 46
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
@@ -190,7 +188,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "test",
                         "test",
                         "tests"});
-#line 46
+#line 47
  testRunner.Given("I sign up to site with valid details:", ((string)(null)), table4, "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -199,9 +197,9 @@ this.ScenarioInitialize(scenarioInfo);
             table5.AddRow(new string[] {
                         "test",
                         "test"});
-#line 49
+#line 50
  testRunner.When("I return to the site and login with the created account:", ((string)(null)), table5, "When ");
-#line 52
+#line 53
  testRunner.Then("I should successfully be logged into the site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
