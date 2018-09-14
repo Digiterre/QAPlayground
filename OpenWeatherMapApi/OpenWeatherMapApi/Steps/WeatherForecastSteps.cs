@@ -106,7 +106,7 @@ namespace OpenWeatherMapApi.Steps
         public void ThenIShouldGetAnInvalidResponseFromTheApi(HttpStatusCode status)
         {
             IsValidJson(Response.Content).Should().BeTrue();
-            Response.StatusCode.Should().Be(status, "Incorrect Status");
+            Response.StatusCode.Should().Be(status, "Incorrect Status. The returned status should be 401");
         }
 
 
