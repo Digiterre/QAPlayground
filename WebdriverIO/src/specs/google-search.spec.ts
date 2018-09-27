@@ -4,6 +4,8 @@ import googleSearchPage from '../page/google-search-page'
 //@ts-ignore
 describe('Google search feature', () => {
     
+
+  //sometest
     //@ts-ignore
   it('Search for WebdriverIO', () => {
     googleSearchPage.open()
