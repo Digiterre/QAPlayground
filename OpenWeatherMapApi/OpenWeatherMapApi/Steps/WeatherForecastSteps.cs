@@ -87,7 +87,7 @@ namespace OpenWeatherMapApi.Steps
                     GetMinimumTemperature(forecast);
                 }
             }
-            Temp.Count.Should().BeGreaterThan(0, "The forecast shoulod match the day");
+            Temp.Count.Should().BeGreaterThan(0, "The forecast should match the day");
             Temp.Min().Should().BeGreaterThan(expectedTemp, "The temperature should be warmer");
         }
 

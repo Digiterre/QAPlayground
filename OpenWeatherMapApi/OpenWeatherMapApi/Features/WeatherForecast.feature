@@ -12,9 +12,9 @@ Scenario Outline: Good Weather Check
 	And the temperature should be warmer than <temperature>
 	Examples: 
 	| city   | day    | temperature | Httpstatus |
-	| Lagos  | Monday | 10          | 200        |
-	| Doha   | Monday | 10          | 200        |
-	| Mumbai | Monday | 20          | 200        |
+	| Lagos  | Tuesday | 10          | 200        |
+	| Doha   | Tuesday | 10          | 200        |
+	| Mumbai | Tuesday | 20          | 200        |
 
 ##Expected Response 404
 Scenario Outline: Good Weather Check for Wrong City

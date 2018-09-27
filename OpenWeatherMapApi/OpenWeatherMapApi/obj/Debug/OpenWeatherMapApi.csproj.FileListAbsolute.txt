@@ -41,6 +41,5 @@ C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\bin\Debug\Newtonsoft.Jso
 C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\bin\Debug\nunit.framework.pdb
 C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\bin\Debug\nunit.framework.xml
 C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\bin\Debug\System.ValueTuple.xml
-C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\obj\Debug\OpenWeatherMapApi.csprojResolveAssemblyReference.cache
 C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\obj\Debug\OpenWeatherMapApi.dll
 C:\Dev\QAPlayground\OpenWeatherMapApi\OpenWeatherMapApi\obj\Debug\OpenWeatherMapApi.pdb

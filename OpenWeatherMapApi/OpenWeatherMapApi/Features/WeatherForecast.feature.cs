@@ -72,9 +72,9 @@ namespace OpenWeatherMapApi.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Good Weather Check")]
-        [NUnit.Framework.TestCaseAttribute("Lagos", "Monday", "10", "200", null)]
-        [NUnit.Framework.TestCaseAttribute("Doha", "Monday", "10", "200", null)]
-        [NUnit.Framework.TestCaseAttribute("Mumbai", "Monday", "20", "200", null)]
+        [NUnit.Framework.TestCaseAttribute("Lagos", "Tuesday", "10", "200", null)]
+        [NUnit.Framework.TestCaseAttribute("Doha", "Tuesday", "10", "200", null)]
+        [NUnit.Framework.TestCaseAttribute("Mumbai", "Tuesday", "20", "200", null)]
         public virtual void GoodWeatherCheck(string city, string day, string temperature, string httpstatus, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Good Weather Check", null, exampleTags);
