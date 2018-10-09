@@ -14,6 +14,7 @@ describe('Demo Feature', function(){
 
         var theUrl = browser.getUrl();
         console.log('Url is:' + theUrl);
+
     });
     
 });
