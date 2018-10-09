@@ -1,19 +1,16 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "test framework webdriverio",
+  "description": "mochaBdd",
   "main": "index.js",
-  "dependencies": {
-    "jshint": "^2.9.6"
+  "scripts": {
+    "test": "../../packages/wdio-cli/bin/wdio.js ./node_modules/wdio.conf.js"
   },
+  "author": "Lambert Egbe",
+  "license": "ISC",
   "devDependencies": {
     "selenium-standalone": "^6.15.3",
     "wdio-mocha-framework": "^0.6.3",
     "webdriverio": "^4.13.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "LambertE",
-  "license": "ISC"
+  }
 }
