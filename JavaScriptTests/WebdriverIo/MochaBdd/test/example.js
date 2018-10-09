@@ -2,20 +2,18 @@
 describe('Demo Feature', function(){
 
     it('my first demo test', function(){
-        return browser
-        .url('./')
-        .getTitle().then(function(title){
-            console.log('Title is: ' + title);
-        })
-        .setValue('#search_form_input_homepage','Webdriverio')
-        .click('#search_button_homepage')
-        .getTitle().then(function(title){
-            console.log('Title is :' + title);
-        })
-        .getUrl().then(function(url){
-            console.log('Url is:' + url);
-        });
+        browser.url('./');
+        var title = browser.getTitle();
+        console.log('Title is: ' + title);
 
+        browser.setValue('#search_form_input_homepage','Webdriverio');
+        browser.click('#search_button_homepage');
+
+        var theTile = browser.getTitle();
+        console.log('Title is :' + theTile);
+
+        var theUrl = browser.getUrl();
+        console.log('Url is:' + theUrl);
     });
     
 });
