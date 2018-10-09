@@ -1,16 +1,22 @@
-var webdriverio = require('webdriverio');
-var options = { desiredCapabilities: { browserName: 'chrome' } };
-var client = webdriverio.remote(options);
 
-client
-    .init()
-    .url('https://duckduckgo.com/')
-    .setValue('#search_form_input_homepage', 'WebdriverIO')
-    .click('#search_button_homepage')
-    .getTitle().then(function(title) {
-        console.log('Title is: ' + title);
+describe('Demo Feature', function(){
 
-        // outputs:
-        // "Title is: WebdriverIO (Software) at DuckDuckGo"
-    })
-    .end();
+    it('my first demo test', function(){
+
+        return browser
+        .url('./')
+        .getTitle().then(function(title){
+            console.log('Title is: ' + title);
+        })
+        .setValue('#search_form_input_homepage','Webdriverio')
+        .click('#search_button_homepage')
+        .getTitle().then(function(title){
+            console.log('Title is :' + title);
+        })
+        .getUrl().then(function(url){
+            console.log('Url is:' + url);
+        });
+
+    });
+    
+});
