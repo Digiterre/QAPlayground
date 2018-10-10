@@ -9,8 +9,11 @@
   "author": "Lambert Egbe",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^0.4.3",
     "selenium-standalone": "^6.15.3",
     "wdio-mocha-framework": "^0.6.3",
     "webdriverio": "^4.13.2"
-  }
+  },
+  "dependencies": {}
 }
