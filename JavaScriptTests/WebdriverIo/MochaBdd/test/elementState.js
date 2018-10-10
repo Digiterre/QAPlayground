@@ -9,26 +9,19 @@ describe('Element State Feature', function(){
         browser.windowHandleMaximize();    
     });
 
-    it('IsVisible Test', function(){
-        var hasVisible = browser.isVisible('#nav-your-amazon');
-        expect(hasVisible, "element is not visible").to.be.true;
+    it('Search Test', function(){
+        browser.clearElement("#twotabsearchtextbox").setValue("#twotabsearchtextbox","Mens Clothing");
+        browser.element("//*[@id='nav-search']/form/div[2]/div/input").click();
+        var pagetitle = browser.getText("//*[@id='merchandised-content']/div[1]/div[1]/div[1]/h1");
+        console.log(pagetitle);
+        expect(pagetitle).to.match("Men's Clothing");
     });
 
-    it('IsExisting Test', function(){
-        var hasVisible = browser.isVisible('#nav-your-amazon');
-        expect(hasVisible, "element does not exist").to.be.true;
+    it('Select Shop Department', function(){
+        browser.element("div#nav-shop").click();
+
+
+
     });
 
-    it('HasFocus Test', function(){
-        var hasVisible = browser.hasFocus('#nav-your-amazon');
-        expect(hasVisible, "element does not exist").to.be.false;
-    });
-
-    it('WaitFor Test', function(){
-        //ToDo
-    });
-
-    it('WaitUntil Test', function(){
-        //ToDo
-    });
 });
