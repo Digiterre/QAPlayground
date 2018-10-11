@@ -1,12 +1,12 @@
 
+
 describe('Demo Feature', function(){
 
     beforeEach(function(){
         browser.url('./');
     });
     
-    it('my first demo test', function(){
-        
+    it('my first demo test', function(){      
         var title = browser.getTitle();
         console.log('Title is: ' + title);
         browser.setValue('#search_form_input_homepage','Webdriverio');
@@ -15,11 +15,5 @@ describe('Demo Feature', function(){
         console.log('Title is :' + theTile);
         var theUrl = browser.getUrl();
         console.log('Url is:' + theUrl);
-
-    });
-
-    it('my second demo test', function(){
-        
-    });
-    
+    });   
 });
