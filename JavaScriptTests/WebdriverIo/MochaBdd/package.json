@@ -12,8 +12,11 @@
     "chai": "^4.2.0",
     "chai-webdriverio": "^0.4.3",
     "es6": "0.0.7",
+    "onchange": "^5.0.2",
     "selenium-standalone": "^6.15.3",
+    "sync-request": "^6.0.0",
     "wdio-mocha-framework": "^0.6.3",
+    "wdio-selenium-standalone-service": "0.0.10",
     "webdriverio": "^4.13.2"
   },
   "dependencies": {}
