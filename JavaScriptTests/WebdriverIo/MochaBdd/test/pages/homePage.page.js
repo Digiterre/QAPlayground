@@ -10,7 +10,7 @@ class HomePage{
     get ContinueBtn(){return $("span#continue");}
     get missingEmailAlertMsg(){return $("//*[@id='auth-email-missing-alert']/div/div");}
     get FirstReturnedProduct(){return $("li#result_0");}
-    
+    get SignInButton(){return $("//*[@id='signInSubmit']");}
 
     searchForItem(value){
         this.searchTextBox.setValue(value);
@@ -42,7 +42,12 @@ class HomePage{
     }
 
     clickContinueButton(){
-        this.ContinueBtn.click();
+        if(this.SignInButton.isVisible()){
+            this.SignInButton.click();
+        }
+        else{
+            this.ContinueBtn.click();
+        }       
     }
 
     enterEmptyDetails(){
@@ -52,7 +57,6 @@ class HomePage{
 
     returnEmptyEmailAlert(){
         return this.missingEmailAlertMsg.getText();
-    }
-    
+    }   
 }
 module.exports = new HomePage();
